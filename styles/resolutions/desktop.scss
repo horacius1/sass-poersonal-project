@@ -1,8 +1,10 @@
+@media  (max-width:1601px)
+{
 .component-1
 {
     position: relative;
-    min-width: 1600px;
     max-width: 1600px;
+    min-width: 1600px;
    
     background-color:$lighter-grey ;
     width: 100%;
@@ -182,6 +184,7 @@
  position: relative;
     .marker 
         {
+        
         width: 40px;
         height: 40px;
            position: absolute;
@@ -192,6 +195,7 @@
            border: white 1px solid;
            color :$grey;
         :hover{
+            cursor: pointer;
             color:black;
         }
         }
@@ -207,6 +211,7 @@
            font-size:25px;
            border: white 1px solid;
            :hover{
+            cursor: pointer;
             color:black;
         }
         }
@@ -222,6 +227,7 @@
            border: white 1px solid;
            color :$grey;
            :hover{
+            cursor: pointer;
             color:black;
         }
           
@@ -305,6 +311,15 @@
 
 
 .component-3{
+    @media (min-width:769px)
+    {
+        display: flex;
+   flex-direction: row;
+    .grid-2
+    {
+        display: none
+    }
+}
     position: relative;
     background-color: black;
     width: 100%;
@@ -315,8 +330,7 @@
     padding-bottom:62px ;
     padding-left: 200px;
   
-   display: flex;
-   flex-direction: row;
+   
    .h2
         {
             position: absolute;
@@ -353,6 +367,7 @@
         .item:nth-of-type(5)
         {
             outline: $red solid 5px;
+            outline-offset: -5px;
         }
         
     }
@@ -462,13 +477,18 @@
 
 .component-5
 {
+ 
     width: 100%;
     height: 156px;
   min-width: 1600px;
   max-width: 1600px;
-    @include flex(0,center);
+  @media (min-width:770px)
+  {
+      @include flex(0,center);
+      padding-left: 235px;
+  }
     background-color: $black;
-    padding-left: 235px;
+    
     .header
     { display: flex;
         flex-direction: row;
@@ -484,10 +504,13 @@
             span
             {
                 @include monserat(700,18px, white);
-                
-                margin-top: 5px;
-                margin-left: 5px;
-                margin-right: 2px;
+                @media (min-width:769px)
+                {
+                    margin-top: 5px;
+                    margin-left: 5px;
+                    margin-right: 2px;
+                }
+               
             }
     }
 
@@ -495,8 +518,11 @@
     div:nth-of-type(2)
     {
         @include monserat(300,14px, white);
-        margin-left: 50px;
+       
+        @media (min-width:770px){
+            margin-left: 50px;
         margin-left: 382px;
+        }
         
     }
     
@@ -508,11 +534,17 @@
         border: 1px solid $grey;
         color:white;
         font-size: 35px;
-        margin-left: 275px;
+        
+        @media (min-width:770px){
+            margin-left: 275px;
+       
+        }
         :hover
         {
+            cursor: pointer;
             color: $red;
         }
     }
 
+}
 }
