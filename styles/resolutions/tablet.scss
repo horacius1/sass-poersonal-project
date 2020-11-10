@@ -168,13 +168,16 @@
 
         .grid-2
         {
-
-            grid-template-columns: repeat(5, 102px);
-            grid-template-rows: repeat(1, 100px);
-            display: grid;
-            margin-left: 3px;
-            margin-top: 30px;
-            gap:20px;
+@media  (min-width:322px)
+{
+    grid-template-columns: repeat(5, 102px);
+    grid-template-rows: repeat(1, 100px);
+    display: grid;
+    margin-left: 3px;
+    margin-top: 30px;
+    gap:20px;
+}
+         
             .item
             {
     
@@ -313,4 +316,3 @@
 
  
 }
-

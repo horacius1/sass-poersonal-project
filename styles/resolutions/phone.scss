@@ -1,0 +1,515 @@
+@media  (max-width:320px)
+{
+
+
+    .component-1
+    {
+      
+        max-width: 320px;
+        min-width: 320px;
+       
+        width: 320px;
+        height: 486px;
+    
+        .menu
+        {
+            z-index: 10;
+            position: absolute;
+            top:12px;
+            right: 25px;
+          width: 63px;  
+          height: 60px;
+          background-color:$black;
+          @include flex (center,center);
+          flex-direction: column;
+           hr 
+           {
+               margin-bottom: 0.01px;
+               margin-top: 3px;
+               
+               width: 27px;
+               height: 4px;
+               background-color: white;
+               
+           }
+        }
+        .wrapper {
+            
+            
+           
+            
+        
+            .info
+            {
+                position: relative;
+                padding-top: 25px;
+                padding-left:33px ;
+                padding-right:35.5px ;
+                width: 275px;
+                height: 425px;
+                background-color: $red;
+                margin-left:-18px;
+               
+            }
+            div:nth-of-type(2)
+            {
+                
+                background-color: black;
+                @include monserat(400,10.5px, white);
+                margin-top: 45px;
+                width: 100px;
+                height: 20px;
+                @include flex(center,center)
+            }
+            pre {
+                margin-top: 5px;
+                line-height: 25px;
+                margin-bottom: 15px;
+                @include monserat(700,26px, white);
+                span 
+                {
+                    @include monserat(700,22px, white);
+                }
+            }
+    
+            p
+            {
+                
+                font-size: 16px;
+                color: white;
+                font-weight: 300;
+                line-height: 22px;
+                margin-top: 15px;
+                font-family: 'Open Sans', sans-serif ;
+            }
+           ul
+           {
+              
+               margin-top: 24px;
+               
+            @include monserat(700,18px, white);
+            .li::before
+            {
+                
+                display: inline-block;
+                width: 20px;
+                height: 20px;
+                margin-right: 13px;
+               
+                color: blanchedalmond;
+                list-style: none;
+                content: url(/assets/Shape12.png);
+               
+                
+            }
+          
+           }
+    
+        
+        }
+    
+    
+        .header
+            { display: flex;
+                flex-direction: row;
+                div{
+                    width: 42px;
+                height: 43px;
+                    border :4px solid white;
+                    
+                    @include monserat(700,30px,white);
+                    @include flex(center,center)
+                }
+                    span
+                    {
+                        @include monserat(700,18px, white);
+                        
+                        margin-top: 5px;
+                        margin-left: 5px;
+                        margin-right: 2px;
+                    }
+            }
+    
+            .foot
+            
+            
+            {
+                position: relative;
+                display: flex;
+                margin-top:5px;
+                width: 100%;
+                height: 63px;
+                .grey
+                {
+                   display: none;
+                }
+                .black
+                {position: relative;
+                    margin-top: -5px;
+                    height: 100%;
+                    @media (max-width:768px)
+                    {width: 100%;
+    
+                    }
+                   
+                       
+                    
+                    background-color: black;
+                    
+                    div:nth-of-type(1)
+                    {
+                        display: none;
+                    }
+                    div:nth-of-type(2)
+                    {
+                        display: none;
+                    }
+                    
+                }
+            }
+            
+    }
+    
+    .info
+    {
+        
+     position: relative;
+        .marker 
+            {
+            
+            width: 40px;
+            height: 40px;
+               position: absolute;
+               bottom: 0;
+               right:  70px;
+               @include flex (center,center);
+               font-size:25px;
+               border: white 1px solid;
+               color :$grey;
+            :hover{
+                cursor: pointer;
+                color:black;
+            }
+            }
+        .image 
+            {
+            width: 43px;
+            height: 40px;
+               position: absolute;
+               bottom: 0;
+               right:  110px;
+               color :$grey;
+            @include flex (center,center);
+               font-size:25px;
+               border: white 1px solid;
+               :hover{
+                cursor: pointer;
+                color:black;
+            }
+            }
+        .eye
+            {
+            width: 43px;
+            height: 40px;
+               position: absolute;
+               bottom: 0;
+               right:  153px;
+               @include flex (center,center);
+               font-size:25px;
+               border: white 1px solid;
+               color :$grey;
+               :hover{
+                cursor: pointer;
+                color:black;
+            }
+              
+               
+            }
+    
+    
+         
+    }
+    .component-2
+{
+
+    position: relative;
+    max-width: 320px;
+    min-width: 320px;
+   display: flex;
+   flex-direction: row;
+padding-right: 30px;
+padding-left: 30px;
+    
+    width: 320px;
+    height: 525px;
+ 
+    .start
+    {
+        display: none
+    }
+    .middle
+    {
+        display: none
+    }
+
+    .end
+    {
+       display: none;    
+
+    }
+    .end-2
+    {
+        display: block;
+        text-align: center;
+       
+
+        h1 
+        {
+            @include monserat (700,23px,black);
+            margin-top:36px
+        }
+       p:nth-of-type(1)
+       {
+        margin-top: 30px;
+        @include open-sans (300,18px,black);
+        line-height:29px;
+       }
+       p:nth-of-type(2)
+       {
+          
+        @include open-sans (300,14px,black);
+        line-height:20px;
+    }
+       p:nth-of-type(3)
+       {
+        margin-top:15px;
+        @include open-sans (300,14px,black);
+        line-height:20px;
+    }
+       p:nth-of-type(4)
+       {
+        margin-top:12px;
+        @include open-sans (300,14px,black);
+        line-height:20px;
+    }
+    }
+}
+
+.component-3{
+    @media (min-width:320px)
+    {
+        display: flex;
+   flex-direction: row;
+    .grid-2
+    {
+        display: none
+    }
+}
+    position: relative;
+    background-color: black;
+    width: 100%;
+    height: 360px;
+    min-width: 320px;
+    max-width: 320px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+ margin-top: 75px;
+    
+  padding:0;
+   
+   .h2
+        {left:112px;
+            
+            position: absolute;
+           @include monserat (700 ,25px,white);
+        
+           
+        }
+    .window
+    {
+        margin-top: 20px;
+        width: 271px;
+        height: 190px;
+        background-color: white;
+
+    }
+    .grid
+    {
+   display: none;
+        
+    }
+}
+
+.component-4
+{
+    width: 100%;
+    height: 402px;
+   min-width: 320px;
+   max-width: 320px;
+    background: url(/assets/Clip.jpg) ;
+
+    
+    .venue 
+    {
+        padding-top: 37px;
+        @include flex (0,center);
+        flex-direction: column;
+        
+       
+        width: 270px;
+        height: 402px;
+        background-color: $red;
+        opacity: 90%;
+        margin-left: 0px;
+        margin-left: 23px;
+        h1 
+        {
+          margin-bottom: -10px;
+            height: 60px;
+            @include monserat(700,23px,white);
+            display:inline-block;
+        }
+        .circle
+        {  
+            height: 42.5px;
+            width: 42.5px;
+            border-radius: 20px;
+            background-color:white;
+            opacity: 90%;
+            align-self: center;
+            color: black;
+            @include flex(center,center);
+            font-size: 30px;
+            div 
+            {
+                
+                
+                color: black;
+                
+            }
+           
+        }
+      pre 
+      {
+        @include open-sans (300,15px,white);
+        line-height: 20px;
+          margin-top:30px;
+          
+      }
+      .directions 
+      {
+          margin-top: 20px;
+        @include monserat(400,13px,white);
+      }
+     
+     
+    }
+}
+
+.icons{
+    display: grid;
+    grid-template-columns: 40px 40px 40px;
+    grid-template-rows: 40px;
+   
+
+   margin-top: 24px;
+
+    div
+    {
+        
+      
+      border: 1px solid $grey;
+      
+    }
+    #car
+    {
+        @include flex (center,center);
+        font-size:25px;
+        color: white;
+    }
+    #human
+    {
+        @include flex (center,center);
+        font-size:25px;
+        color: white;
+    }
+    #train
+    {
+        @include flex (center,center);
+        font-size:25px;
+        color: white;
+    }
+}
+
+
+
+
+.component-5
+{
+ 
+    width: 100%;
+    height: 167px;
+  min-width: 320px;
+  max-width: 320px;
+ padding:0;
+ padding-top: 27px;
+ padding-left: 30px;
+    background-color: $black;
+    
+    .header
+    { display: flex;
+        flex-direction: row;
+        
+        div{
+            width: 39px;
+            height: 39px;
+            border :4px solid white;
+            
+            @include monserat(700,30px,white);
+            @include flex(center,center)
+        }
+            span
+            {
+                @include monserat(700,16px, white);
+                @media (min-width:769px)
+                {
+                   margin:0;
+                   
+                }
+               
+            }
+    }
+
+
+    div:nth-of-type(2)
+    {
+        @include monserat(300,13px, white);
+       
+      margin: 0;
+      margin-top: 40px;
+      margin-right: 10px;
+        
+    }
+    
+    div:nth-of-type(3)
+    {
+        @include flex(center,center);
+        width:39px ;
+        height: 39px;
+        border: 1px solid $grey;
+        color:white;
+        font-size: 35px;
+        position: absolute;
+        top:27px;
+        left: 256px;
+      
+        :hover
+        {
+            cursor: pointer;
+            color: $red;
+        }
+    }
+
+}
+}
