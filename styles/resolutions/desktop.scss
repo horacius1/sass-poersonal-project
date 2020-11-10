@@ -1,0 +1,518 @@
+.component-1
+{
+    position: relative;
+    min-width: 1600px;
+    max-width: 1600px;
+   
+    background-color:$lighter-grey ;
+    width: 100%;
+    height: 481px;
+
+    .menu
+    {
+        position: absolute;
+        top:0;
+        right: 990px;
+      width: 63px;  
+      height: 60px;
+      background-color:$black;
+      @include flex (center,center);
+      flex-direction: column;
+       hr 
+       {
+           margin-bottom: 0.01px;
+           margin-top: 3px;
+           
+           width: 27px;
+           height: 4px;
+           background-color: white;
+           
+       }
+    }
+    .wrapper {
+        
+        
+        padding-left: 200px ;
+        padding-right: 750px;
+        width: 100%;
+        height: 416px;
+        .info
+        {
+            position: relative;
+            padding-top: 25px;
+            padding-left:33px ;
+            padding-right:35.5px ;
+            width: 348px;
+            height: 420px;
+            background-color: $red;
+           
+        }
+        div:nth-of-type(2)
+        {
+            
+            background-color: black;
+            @include monserat(400,10.5px, white);
+            margin-top: 45px;
+            width: 100px;
+            height: 20px;
+            @include flex(center,center)
+        }
+        pre {
+            margin-top: 5px;
+            line-height: 25px;
+            margin-bottom: 15px;
+            @include monserat(700,26px, white);
+            span 
+            {
+                @include monserat(700,22px, white);
+            }
+        }
+
+        p
+        {
+            
+            font-size: 16px;
+            color: white;
+            font-weight: 300;
+            line-height: 22px;
+            margin-top: 15px;
+            font-family: 'Open Sans', sans-serif ;
+        }
+       ul
+       {
+          
+           margin-top: 24px;
+           
+        @include monserat(700,18px, white);
+        .li::before
+        {
+            
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            margin-right: 13px;
+           
+            color: blanchedalmond;
+            list-style: none;
+            content: url(/assets/Shape12.png);
+           
+            
+        }
+      
+       }
+
+    
+    }
+
+
+    .header
+        { display: flex;
+            flex-direction: row;
+            div{
+                width: 42px;
+            height: 43px;
+                border :4px solid white;
+                
+                @include monserat(700,30px,white);
+                @include flex(center,center)
+            }
+                span
+                {
+                    @include monserat(700,18px, white);
+                    
+                    margin-top: 5px;
+                    margin-left: 5px;
+                    margin-right: 2px;
+                }
+        }
+
+        .foot
+        
+        
+        {
+            position: relative;
+            display: flex;
+            margin-top:5px;
+            width: 100%;
+            height: 63px;
+            div:nth-of-type(1)
+            {
+                height: 100%;
+                width: 34.50%;
+                background-color: #DBDBDB;
+            }
+            div:nth-of-type(2)
+            {position: relative;
+                
+                height: 100%;
+                width:66.50% ;
+                background-color: black;
+                
+                div:nth-of-type(1)
+                {
+                    background-color: black;
+                    position: absolute;
+                    margin-left: 595px;
+                    border: 1px solid $boder-grey;
+                    height: 61px;
+                    width: 57px;
+                    @include flex (center,center);
+                    @include monserat (700 ,30px ,white);
+                }
+                div:nth-of-type(2)
+                {
+                    background-color: black;
+                    position: absolute;
+                    margin-left: 537px;
+                    border: 1px solid $boder-grey;
+                    height: 61px;
+                    width: 57px;
+                    @include monserat (700 ,30px ,white);
+                    color: white;
+                    @include flex (center,center);
+                }
+                
+            }
+        }
+        
+}
+
+.info
+{
+ position: relative;
+    .marker 
+        {
+        width: 40px;
+        height: 40px;
+           position: absolute;
+           bottom: 0;
+           right:  0;
+           @include flex (center,center);
+           font-size:25px;
+           border: white 1px solid;
+           color :$grey;
+        :hover{
+            color:black;
+        }
+        }
+    .image 
+        {
+        width: 43px;
+        height: 40px;
+           position: absolute;
+           bottom: 0;
+           right:  42px;
+           color :$grey;
+        @include flex (center,center);
+           font-size:25px;
+           border: white 1px solid;
+           :hover{
+            color:black;
+        }
+        }
+    .eye
+        {
+        width: 43px;
+        height: 40px;
+           position: absolute;
+           bottom: 0;
+           right:  85px;
+           @include flex (center,center);
+           font-size:25px;
+           border: white 1px solid;
+           color :$grey;
+           :hover{
+            color:black;
+        }
+          
+           
+        }
+
+
+     
+}
+
+
+.component-2
+{
+
+    position: relative;
+    min-width: 1600px;
+    max-width: 1600px;
+   display: flex;
+   flex-direction: row;
+
+    
+    width: 100%;
+    height: 525px;
+ 
+    .start
+    {
+        width:200px ;
+        height: 525px;
+        background-color: $light-grey;
+    }
+    .middle
+    {
+        width: 347px;
+            height: 525px;
+            background-color:$grey;
+    }
+
+    .end
+    {
+        
+        padding-left: 47px;
+        padding-right:210px ;
+        padding-bottom: 190px;
+        width:750px;
+        height: 525px;
+        padding-top: 43px;
+       
+
+    h1{
+        @include monserat (700,30px,black)
+    }
+    pre:nth-of-type(1)
+    {
+        margin-top: 50px;
+        @include open-sans (300,20px,black);
+        line-height:28px;
+        
+    }
+    pre:nth-of-type(2)
+    {
+        margin-top: -25px;
+        
+        @include open-sans (300,14px,black);
+        line-height:20px;
+        
+    }
+    pre:nth-of-type(3)
+    {
+        
+        margin-top: 10px;
+        @include open-sans (300,14px,black);
+        line-height:20px;
+        
+    }
+        
+           
+        
+
+    }
+}
+
+
+.component-3{
+    position: relative;
+    background-color: black;
+    width: 100%;
+    height: 525px;
+    min-width: 1600px;
+    max-width: 1600px;
+    padding-top: 54px ;
+    padding-bottom:62px ;
+    padding-left: 200px;
+  
+   display: flex;
+   flex-direction: row;
+   .h2
+        {
+            position: absolute;
+           @include monserat (700 ,30px,white);
+           top:54px;
+           right:835px
+        }
+    .window
+    {
+        
+        width: 620px;
+        height: 408px;
+        background-color: white;
+    }
+    .grid
+    {
+        margin-top: 65px;
+        margin-left: 30px;
+
+        display:grid;
+        
+        grid-template-columns: repeat(3, 100px);
+        grid-template-rows: repeat(3, 100px);
+        gap: 24px,;
+       
+
+
+        .item
+        {
+
+            background-color: white;
+        }
+
+        .item:nth-of-type(5)
+        {
+            outline: $red solid 5px;
+        }
+        
+    }
+}
+
+
+.component-4
+{
+    width: 100%;
+    height: 440px;
+   min-width: 1600px;
+   max-width: 1600px;
+    background: url(/assets/Clip.jpg) ;
+
+    
+    .venue 
+    {
+        padding-top: 60px;
+        @include flex (0,center);
+        flex-direction: column;
+        
+       
+        width: 350px;
+        height: 440px;
+        background-color: $red;
+        opacity: 90%;
+        margin-left: 200px;
+        h1 
+        {
+          margin-bottom: -10px;
+            height: 60px;
+            @include monserat(700,30px,white);
+            display:inline-block;
+        }
+        .circle
+        {  
+            height: 42.5px;
+            width: 42.5px;
+            border-radius: 20px;
+            background-color:white;
+            opacity: 90%;
+            align-self: center;
+            color: black;
+            @include flex(center,center);
+            font-size: 30px;
+            div 
+            {
+                
+                
+                color: black;
+                
+            }
+           
+        }
+      pre 
+      {
+        @include open-sans (300,16px,white);
+        line-height: 20px;
+          margin-top:20px;
+          
+      }
+      .directions 
+      {
+          margin-top: 20px;
+        @include monserat(400,14px,white);
+      }
+     
+     
+    }
+}
+
+.icons{
+    display: grid;
+    grid-template-columns: 40px 40px 40px;
+    grid-template-rows: 40px;
+   
+
+   margin-top: 24px;
+
+    div
+    {
+        
+      
+      border: 1px solid $grey;
+      
+    }
+    #car
+    {
+        @include flex (center,center);
+        font-size:25px;
+        color: white;
+    }
+    #human
+    {
+        @include flex (center,center);
+        font-size:25px;
+        color: white;
+    }
+    #train
+    {
+        @include flex (center,center);
+        font-size:25px;
+        color: white;
+    }
+}
+
+
+.component-5
+{
+    width: 100%;
+    height: 156px;
+  min-width: 1600px;
+  max-width: 1600px;
+    @include flex(0,center);
+    background-color: $black;
+    padding-left: 235px;
+    .header
+    { display: flex;
+        flex-direction: row;
+        
+        div{
+            width: 42px;
+            height: 43px;
+            border :4px solid white;
+            
+            @include monserat(700,30px,white);
+            @include flex(center,center)
+        }
+            span
+            {
+                @include monserat(700,18px, white);
+                
+                margin-top: 5px;
+                margin-left: 5px;
+                margin-right: 2px;
+            }
+    }
+
+
+    div:nth-of-type(2)
+    {
+        @include monserat(300,14px, white);
+        margin-left: 50px;
+        margin-left: 382px;
+        
+    }
+    
+    div:nth-of-type(3)
+    {
+        @include flex(center,center);
+        width:39px ;
+        height: 39px;
+        border: 1px solid $grey;
+        color:white;
+        font-size: 35px;
+        margin-left: 275px;
+        :hover
+        {
+            color: $red;
+        }
+    }
+
+}
